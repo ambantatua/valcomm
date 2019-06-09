@@ -1,0 +1,154 @@
+<!--
+	* File Name    : footer.html
+	* Author       : Amber Bantatua
+	* Date Created : 07 April 2017
+	* Version      : 1.0
+	* Last Modified:
+	* Description  : Footer file for Valcomm Electrical website.
+-->
+
+		<footer>
+			<div class="footerRegistered">
+				<p>
+					Fully registered with:
+				</p>
+				<section>
+					<a href="http://www.esv.vic.gov.au/" title="Energy Safe Victoria" target="_blank"><img src="images/esvLogo130.png" alt="Energy Safe Victoria logo"></a>
+				</section>
+				<section>
+					<a href="http://www.titab.com.au/" title="TITAB" target="_blank"><img src="images/titabLogo80.png" alt="TITAB logo"></a>
+				</section>
+				<section>
+					<a href="https://www.cleanenergycouncil.org.au/cec.html" title="Clean Energy Council" target="_blank"><img src="images/cecLogo110.png" alt="Clean Energy Council logo"></a>
+				</section>
+			</div><!-- end .footerRegistered -->
+			<div id="carousel">
+			  <div class="btn-bar">
+			    <div id="buttons"><a id="prev" href="#"></a><a id="next" href="#"></a> </div>
+			  </div>
+			  <div id="slides">
+			    <ul>
+			      <li class="slide">
+			        <div class="quoteContainer">
+			          <p class="quote-phrase">
+			          	<span class="quote-marks">&#8220;</span>
+			          		Cam&#8217;s work is neat and tidy and the installation was completed in a timely fashion
+			          	<span class="quote-marks">&#8221;</span> 
+			          </p>
+			        </div>
+			        <div class="authorContainer">
+			          <p class="quote-author">
+			          	Mike Novak &mdash; Shed Fit Out
+			          </p>
+			        </div>
+			      </li>
+			      <li class="slide">
+			        <div class="quoteContainer">
+			          <p class="quote-phrase">
+			          	<span class="quote-marks">&#8220;</span>
+			          		We really appreciate the work you did for us, and we are very happy with the outcome.
+							Thank you very much.
+						<span class="quote-marks">&#8221;</span> </p>
+			        </div>
+			        <div class="authorContainer">
+			          <p class="quote-author">
+			          	Mick &amp; Jen &mdash;  Bonnie Doon
+			          </p>
+			        </div>
+			      </li>
+			      <li class="slide">
+			        <div class="quoteContainer">
+			          <p class="quote-phrase">
+			          	<span class="quote-marks">&#8220;</span>
+			          		Cameron of Valcomm has done numerous electrical rewiring and new installations around our home and farm. We found him to be proficient, and timely. He also has a good knowledge of regulations and works accordingly.
+							Cameron is very trustworthy and courteous.
+			          	<span class="quote-marks">&#8221;</span> 
+			          </p>
+			        </div>
+			        <div class="authorContainer">
+			          <p class="quote-author">
+			          	Howard &amp; Marie Evans &mdash; Youngs Gap Pastoral
+			          </p>
+			        </div>
+			      </li>
+			    </ul>
+			  </div>
+			</div><!-- end div #carousel -->
+		</footer>
+	</div><!-- end #container -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script>
+$(document).ready(function () {
+    //rotation speed and timer
+    var speed = 5000;
+    
+    var run = setInterval(rotate, speed);
+    var slides = $('.slide');
+    var container = $('#slides ul');
+    var elm = container.find(':first-child').prop("tagName");
+    var item_width = container.width();
+    var previous = 'prev'; //id of previous button
+    var next = 'next'; //id of next button
+    slides.width(item_width); //set the slides to the correct pixel width
+    container.parent().width(item_width);
+    container.width(slides.length * item_width); //set the slides container to the correct total width
+    container.find(elm + ':first').before(container.find(elm + ':last'));
+    resetSlides();
+    
+    
+    //if user clicked on prev button
+    
+    $('#buttons a').click(function (e) {
+        //slide the item
+        
+        if (container.is(':animated')) {
+            return false;
+        }
+        if (e.target.id == previous) {
+            container.stop().animate({
+                'left': 0
+            }, 1500, function () {
+                container.find(elm + ':first').before(container.find(elm + ':last'));
+                resetSlides();
+            });
+        }
+        
+        if (e.target.id == next) {
+            container.stop().animate({
+                'left': item_width * -2
+            }, 1500, function () {
+                container.find(elm + ':last').after(container.find(elm + ':first'));
+                resetSlides();
+            });
+        }
+        
+        //cancel the link behavior            
+        return false;
+        
+    });
+    
+    //if mouse hover, pause the auto rotation, otherwise rotate it    
+    container.parent().mouseenter(function () {
+        clearInterval(run);
+    }).mouseleave(function () {
+        run = setInterval(rotate, speed);
+    });
+    
+    
+    function resetSlides() {
+        //and adjust the container so current is in the frame
+        container.css({
+            'left': -1 * item_width
+        });
+    }
+    
+});
+//a simple function to click next link
+//a timer will call this function, and the rotation will begin
+
+function rotate() {
+    $('#next').click();
+}
+</script>
+</body>
+</html>

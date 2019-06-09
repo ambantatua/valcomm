@@ -1,0 +1,613 @@
+/* CSS styling for Valcomm Electrical */
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgba(85,43,120,0.3);
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	color: #000000;
+}
+body p {
+	line-height: 1.4;
+}
+
+h1 {
+	color: #552879;
+	font-size: 1.625em;
+	text-transform: uppercase;
+	margin: 0;
+}
+h2 {
+	color: #000000;
+	font-size: 1.250em;
+	margin-top: 35px;
+	margin-bottom: 0;
+	float:left;
+	width: 100%;
+}
+h3 {
+	color: #552879;
+	margin-bottom: 10px;
+}
+
+#container {
+	max-width: 1162px;
+	height: 100%;
+	margin: 0 auto 50px;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+/* Valcomm Electrical Header */
+
+header {
+	width:100%;
+	max-height: 200px;
+	background-color: #552879;
+	color: #ffffff;
+	overflow: hidden;
+}
+header .valcommHeaderLogo {
+	max-width:300px;
+	margin: 0 60px;
+	padding: 20px 0;
+	box-sizing:border-box;
+	float:left;
+}
+
+header .valcommHeaderText {
+	font-family: 'century gothic', sans-serif;
+	color: #ffffff;
+	font-size: 1.25em;
+	line-height: 1.2;
+	text-align: right;
+	/*max-width: 350px;*/
+  	float:right;
+  	margin: 60px 60px 0 0;
+}
+
+/* Testimonial Carousel */
+#carousel {
+  position: relative;
+  max-width: 350px;
+  float:right;
+  margin: 15px 60px 0 0;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width:100%;
+  height: 240px;
+}
+
+#slides ul {
+  list-style: none;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#slides li {
+  width: 100%;
+  height: 200px;
+  float: left;
+  font-size: 14px;
+  text-align: right;
+  position: relative;
+}
+.quote-phrase,
+.quote-author {
+  text-align: right;
+	font-size: 14px;
+	font-style: italic;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 20px;
+  font-family: arial, sans-serif;
+}
+
+.quote-phrase {
+  height: 100px;
+  font-size: 14px;
+  color: #FFF;
+  font-style: italic;
+}
+
+.quote-marks {
+  font-size: 14px;
+  padding: 0 3px 3px;
+  position: inherit;
+}
+
+.quote-author {
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.quoteContainer,
+.authorContainer {
+  display: table;
+  width: 100%;
+}
+/* Valcomm Electrical Navigation */
+nav {
+	float:left;
+}
+nav ul {
+	list-style: none;
+	margin-top: 40px;
+	margin-left:60px;
+	padding:0;
+}
+nav ul li {
+	width: 157px;
+	height: 50px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#552879+15,745493+50,552879+85 */
+	background: #552879; /* Old browsers */
+	background: -moz-linear-gradient(top,  #552879 15%, #745493 50%, #552879 85%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #552879 15%,#745493 50%,#552879 85%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #552879 15%,#745493 50%,#552879 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#552879', endColorstr='#552879',GradientType=0 ); /* IE6-9 */
+	margin-top:5px;
+	padding-top:14px;
+	padding-bottom: 14px;
+	box-sizing:border-box;
+	text-transform: uppercase;
+	font-family: arial, sans-serif;
+	font-size: 1.250em;
+	text-align: center;
+}
+a.menuButton {
+	
+}
+
+li.selected a {
+	color: #552879;
+}
+.selected {
+	background: #ffffff;
+	border: #552879 solid 1px;
+}
+
+nav ul li a {
+	color: #ffffff;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	color: #552879;
+	background: #ffffff;
+	border: #552879 solid 1px;
+	width:100%;
+}
+nav ul li a:hover {
+	color: #552879;
+}
+
+/* mobile nav */
+
+a.menuButtonMobile {
+	
+}
+
+.navMobile li, .navMobile li a {
+	height: 68px;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right:8px;
+}
+
+#homeLinkMob {
+	background: url('images/home-web-page32.png') 15px 15px;
+	background-repeat:no-repeat;
+	width:64px;
+	background-color: #552879;
+	border: #552879 solid 1px;
+}
+.homeLinkMobActive {
+	background: url('images/home-web-page-purple32.png') 15px 15px !important;
+	background-repeat:no-repeat !important;
+	width:64px !important;
+}
+.navMobile #servicesLinkMob {
+	background: url('images/screwdriverWhite_32.png') 15px 15px;
+	background-repeat:no-repeat;
+	width:64px;
+	background-color: #552879;
+	border: #552879 solid 1px;
+}
+.servicesLinkMobActive {
+	background: url('images/screwdriverPurple_32.png') 15px 15px !important;
+	background-repeat:no-repeat !important;
+	width:64px !important;
+}
+.navMobile #projectsLinkMob {
+	background: url('images/closed-folder32.png') 15px 15px;
+	background-repeat:no-repeat;
+	width:64px;
+	background-color: #552879;
+	border: #552879 solid 1px;
+}
+.projectsLinkMobActive {
+	background: url('images/closed-folder-purple32.png') 15px 15px !important;
+	background-repeat:no-repeat !important;
+	width:64px !important;
+}
+.navMobile #contactLinkMob {
+	background: url('images/smartphoneWhite_40.png') 15px 12px;
+	background-repeat:no-repeat;
+	width:64px;
+	background-color: #552879;
+	border: #552879 solid 1px;
+}
+.contactLinkMobActive {
+	background: url('images/smartphonePurple_40.png') 15px 12px !important;
+	background-repeat:no-repeat !important;
+	width:64px !important;
+}
+
+.valcommText {
+	max-width:280px;
+	float:right;
+}
+
+/* Valcomm Electrical Footer */
+footer {
+	width:100%;
+	background-color: #552879;
+	font-size: 14px;
+	color: #ffffff;
+	float: left;
+	overflow: hidden;
+}
+footer .footerRegistered {
+	margin: 25px 0 40px 60px;
+	float:left;
+}
+footer .footerRegistered section {
+	margin-right:30px;
+	float:left;
+	cursor: pointer;
+}
+footer .footerRightText {
+	text-align: right;
+	margin: 55px 60px 0 0;
+	float:right;
+}
+
+/* Valcomm Electrical home page */
+
+#container .homeContentWrapper .homeText {
+	max-width: 800px;
+	margin:40px 20px 20px 115px;
+	padding-right: 20px;
+	box-sizing:border-box;
+	float:left;
+}
+#container .homeContentWrapper .homeText p:first-child {
+	margin-top:0;
+}
+#container .homeImage {
+	background-image: url(images/valcommHomeImage_750.jpg);
+	background-repeat: no-repeat;
+	width:750px;
+	height:300px;
+	margin: 0 0 30px;
+}
+.homeImageTextWrapper {
+	padding-top:55px;
+}
+.homeImageTextBackground {
+	max-width:750px;
+	height: 180px;
+	margin:0 auto;
+	background:rgba(255,255,255, 0.65);
+}
+#container .homeImageText {
+	font-family: 'century gothic', sans-serif;
+	color: #000000;
+	font-size: 1.55em;
+	line-height: 1.5;
+	text-align: center;
+	padding: 71px;
+}
+
+/* Valcomm Electrical Services page */
+#container .servicesContentWrapper, #container .projectsContentWrapper {
+	max-width: 800px;
+	width:100%;
+	margin:40px 20px 0 115px;
+	padding-right: 40px;
+	box-sizing:border-box;
+	float:left;
+}
+#container .servicesContentWrapper section {
+	width:50%;
+	height:425px;
+	float:left;
+	box-sizing:border-box;
+	padding:0 15px 0 0;
+}
+#container .servicesContentWrapper section .servicesImage, #container .projectsContentWrapper section .projectsImage {
+	margin-top: 20px;
+	width:350px;
+	height:200px;
+	float:left;
+	background-color: rgba(85,43,120,0.3);
+}
+#container .servicesContentWrapper section .servicesText, #container .projectsContentWrapper section .projectsText {
+	max-width:495px;
+	float:left;
+}
+
+/* Valcomm Electrical Projects page */
+
+#container .projectsContentWrapper section {
+	width:50%;
+	height:600px;
+	float:left;
+	box-sizing:border-box;
+	padding:0 15px 0 0;
+}
+
+.projectLocation {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-left:15px;
+	float:left;
+}
+
+.projectsText ul {
+	padding-left: 25px;
+}
+.projectsText li {
+	line-height: 1.2;
+	padding-bottom: 10px;
+}
+
+/* Valcomm Electrical Contact page */
+#container .contactContentWrapper {
+	max-width: 800px;
+	margin:40px 20px 0 115px;
+	padding-right: 40px;
+	box-sizing:border-box;
+	float:left;
+}
+#container .contactContentWrapper .contactText {
+	max-width:265px;
+	float:left;
+	margin-top:20px;
+	margin-right: 15px;
+}
+#container .contactContentWrapper .contactImage {
+	margin-top:35px;
+	float:right;
+}
+
+/* Contact Form */
+#container .contactContentWrapper .contactForm {
+	max-width: 300px;
+	width:100%;
+	float:left;
+	margin: 0 0 50px;
+}
+.fName, .pNumber, .eAddress, .location, .yEnquiry {
+	width:100%;
+	float:left;
+	margin-top: 5px;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+.submitButtonWrapper {
+	width:100%;
+	max-width:655px;
+	float:left;
+}
+.submitButton {
+	width:100%;
+	height: 50px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.2em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#552879+15,745493+50,552879+85 */
+	background: #552879; /* Old browsers */
+	background: -moz-linear-gradient(top,  #552879 15%, #745493 50%, #552879 85%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #552879 15%,#745493 50%,#552879 85%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #552879 15%,#745493 50%,#552879 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#552879', endColorstr='#552879',GradientType=0 ); /* IE6-9 */
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	margin:15px auto 0 auto;
+}
+.submitButton:hover {
+	background: #552879;
+}
+.error {
+	color:red;
+	float: left;
+}
+.success {
+	float:left;
+}
+
+/* Contact form styles */
+
+p.error, p.success {
+			font-weight: bold;
+			padding: 10px;
+			border: 1px solid;
+		}
+		p.error {
+			background: #ffc0c0;
+			color: #900;
+		}
+		p.success {
+			background: #b3ff69;
+			color: #4fa000;
+		}
+
+/* media queries */
+@media only screen and (min-width:200px) and (max-width:481px) {
+
+	header {
+		max-height: 300px;
+	}
+	header .valcommHeaderLogo {
+	    margin: 0 auto;
+	    padding: 10px 0;
+	    float: none;
+	    max-width: 200px;
+	}
+
+	.valcommHeaderLogo a img {
+		max-width: 200px;
+    	margin: 0 auto;
+	}
+	header .valcommHeaderText {
+		font-size: 0.8em;
+		text-align: center;
+		margin: 0 auto;
+    	float: none;
+    	padding-bottom: 10px;
+	}
+	
+	nav {
+		max-width: 300px;
+    	margin: 0 auto;
+    	float:none;
+    	overflow: hidden;
+	}
+	nav.navWords {
+		display:none;
+	}
+	
+	#container .homeImageText {
+		font-size: 1.5em;
+		padding:40px;
+	}
+	#container .homeContentWrapper .homeText, #container .servicesContentWrapper, #container .projectsContentWrapper, #container .contactContentWrapper {
+		padding-right: 0;
+	}
+	.valcommText {
+		float:left;
+	}
+
+	footer .footerRegistered section {
+		width:100%;
+		padding:10px 0;
+	}
+}
+
+@media only screen and (min-width:482px) {
+	nav.navMobile {
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width:613px) {
+	/*header .valcommHeaderLogo {
+		margin:0 60px 0 30px;
+	}*/
+
+	#container .contactContentWrapper .contactImage {float:none;}
+
+}
+
+@media only screen and (max-width:768px) {
+
+	#carousel {
+		float: left;
+    	margin: 10px 0;
+    	width: 100%;
+    	max-width: 300px;
+	}
+	div#slides {
+		width: 300px !important;
+		padding:10px;	
+		box-sizing:border-box;
+	}
+	ul li .slides {
+		width:300px;
+	}
+	#container .mediaWrapper {
+		max-width: 90%;
+		margin: 40px auto 0;
+	}
+	nav.navMobile ul {
+		margin-top: 0;
+    	margin-left: 0;
+	}
+	nav ul {
+		margin-top:0;
+		margin-left: 0;
+	}
+	
+	#container .homeContentWrapper .homeText, #container .servicesContentWrapper, #container .projectsContentWrapper, #container .contactContentWrapper {
+		margin: 30px 0 0 0;
+	}
+
+	#container .servicesContentWrapper section .servicesImage, #container .projectsContentWrapper section .projectsImage, section .projectsImage img, section .servicesImage img {
+		width:100%;
+		height:auto;
+	}  
+	#container .servicesContentWrapper section, #container .projectsContentWrapper section {
+		width:100%;
+		height:auto;
+		float:left;
+		padding:0;
+	}
+	
+	footer .footerRightText {
+		text-align: left;
+		margin: 0 60px 0 30px;
+		float:left;
+	}
+}
+@media only screen and (max-width:850px) {
+	#container .homeImage {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width:1179px) {
+	nav ul li {
+		float:left;
+		display:inline;
+		margin-right:15px;
+	}
+	nav ul li:hover {
+		width:157px;
+	}
+}
+@media only screen and (max-width:1214px) {
+
+	.projectLocation, .projectsText {
+		width:100%;
+	}
+	footer .footerRegistered {
+		margin: 25px 0 30px 30px;
+	}
+	
+}
+@media only screen and (min-width:769px) and (max-width:1234px) {
+	
+	#container .homeContentWrapper .homeText, #container .servicesContentWrapper, #container .projectsContentWrapper, #container .contactContentWrapper {
+		margin: 50px 80px 0 65px;
+	}
+	#container .homeContentWrapper {
+		margin-top: 0;
+	}
+}
